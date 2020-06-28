@@ -37,39 +37,7 @@ namespace CarProject.DriverFolder
             this.Close();
         }
 
-        public bool isValidIsraeliID(int id)
-        {
-            string m_PERID = id.ToString();
-            char[] digits = m_PERID.PadLeft(9, '0').ToCharArray();
-            int[] oneTwo = { 1, 2, 1, 2, 1, 2, 1, 2, 1 };
-            int[] multiply = new int[9];
-            int[] oneDigit = new int[9];
-            for (int i = 0; i < 9; i++)
-                multiply[i] = Convert.ToInt32(digits[i].ToString()) * oneTwo[i];
-            for (int i = 0; i < 9; i++)
-                oneDigit[i] = (int)(multiply[i] / 10) + multiply[i] % 10;
-            int sum = 0;
-            for (int i = 0; i < 9; i++)
-                sum += oneDigit[i];
-            if (sum % 10 == 0) return true;
-            else return false;
-                
-        }
-        public void okLabelHandler(Label label)
-        {
-            label.Text = "OK!";
-            label.ForeColor = System.Drawing.Color.Green;
-        }
-        public void requiredLabelHandler(Label label)
-        {
-            label.Text = "Required!";
-            label.ForeColor = System.Drawing.Color.Red;
-        }
-        public void incorrectLabelHandler(Label label)
-        {
-            label.Text = "Not Valid!";
-            label.ForeColor = System.Drawing.Color.Red;
-        }
+
 
         private void nameTB_KeyUp(object sender, KeyEventArgs e)
         {
@@ -136,5 +104,54 @@ namespace CarProject.DriverFolder
                 idFlag = false;
             }
         }
+
+        private void idTB_Enter(object sender, EventArgs e)
+        {
+            toolTipHandlerNumeric(idTB, "Must be legit Israeli ID");
+        }
+
+        #region Functions
+        public void toolTipHandlerNumeric(NumericUpDown textBox, string text)
+        {
+            int VisibleTime = 4000;
+
+            ToolTip tt = new ToolTip();
+            tt.Show(text, textBox, 0, 25, VisibleTime);
+        }
+
+        public bool isValidIsraeliID(int id)
+        {
+            string m_PERID = id.ToString();
+            char[] digits = m_PERID.PadLeft(9, '0').ToCharArray();
+            int[] oneTwo = { 1, 2, 1, 2, 1, 2, 1, 2, 1 };
+            int[] multiply = new int[9];
+            int[] oneDigit = new int[9];
+            for (int i = 0; i < 9; i++)
+                multiply[i] = Convert.ToInt32(digits[i].ToString()) * oneTwo[i];
+            for (int i = 0; i < 9; i++)
+                oneDigit[i] = (int)(multiply[i] / 10) + multiply[i] % 10;
+            int sum = 0;
+            for (int i = 0; i < 9; i++)
+                sum += oneDigit[i];
+            if (sum % 10 == 0) return true;
+            else return false;
+
+        }
+        public void okLabelHandler(Label label)
+        {
+            label.Text = "OK!";
+            label.ForeColor = System.Drawing.Color.Green;
+        }
+        public void requiredLabelHandler(Label label)
+        {
+            label.Text = "Required!";
+            label.ForeColor = System.Drawing.Color.Red;
+        }
+        public void incorrectLabelHandler(Label label)
+        {
+            label.Text = "Not Valid!";
+            label.ForeColor = System.Drawing.Color.Red;
+        }
+        #endregion  
     }
 }

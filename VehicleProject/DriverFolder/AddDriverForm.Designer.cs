@@ -156,6 +156,7 @@
             this.idTB.Name = "idTB";
             this.idTB.Size = new System.Drawing.Size(166, 29);
             this.idTB.TabIndex = 50;
+            this.idTB.Enter += new System.EventHandler(this.idTB_Enter);
             this.idTB.KeyUp += new System.Windows.Forms.KeyEventHandler(this.idTB_KeyUp_1);
             // 
             // AddDriverForm
