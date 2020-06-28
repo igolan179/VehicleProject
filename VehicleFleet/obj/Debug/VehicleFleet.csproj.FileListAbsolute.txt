@@ -1,0 +1,14 @@
+C:\Dev\VehicleFleet\VehicleFleet\bin\Debug\VehicleFleet.exe.config
+C:\Dev\VehicleFleet\VehicleFleet\bin\Debug\VehicleFleet.exe
+C:\Dev\VehicleFleet\VehicleFleet\bin\Debug\VehicleFleet.pdb
+C:\Dev\VehicleFleet\VehicleFleet\obj\Debug\VehicleFleet.csprojAssemblyReference.cache
+C:\Dev\VehicleFleet\VehicleFleet\obj\Debug\VehicleFleet.csproj.CoreCompileInputs.cache
+C:\Dev\VehicleFleet\VehicleFleet\obj\Debug\VehicleFleet.exe
+C:\Dev\VehicleFleet\VehicleFleet\obj\Debug\VehicleFleet.pdb
+C:\Dev\VehicleProject\VehicleFleet\bin\Debug\VehicleFleet.exe.config
+C:\Dev\VehicleProject\VehicleFleet\bin\Debug\VehicleFleet.exe
+C:\Dev\VehicleProject\VehicleFleet\bin\Debug\VehicleFleet.pdb
+C:\Dev\VehicleProject\VehicleFleet\obj\Debug\VehicleFleet.csproj.CoreCompileInputs.cache
+C:\Dev\VehicleProject\VehicleFleet\obj\Debug\VehicleFleet.exe
+C:\Dev\VehicleProject\VehicleFleet\obj\Debug\VehicleFleet.pdb
+C:\Dev\VehicleProject\VehicleFleet\obj\Debug\VehicleFleet.csprojAssemblyReference.cache
